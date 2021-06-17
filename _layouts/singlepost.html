@@ -13,7 +13,7 @@ layout: post
             <li>
                 <span class="bi bi-tag"></span>
                 {% for tag in page.tags %}
-                    <a class ="href-tag" href="/tag/{{tag | slugify}}">{{tag}}</a>
+                    <a href="/tag/{{tag | slugify}}">{{tag}}{% unless forloop.last %},{% endunless %}</a>
                 {% endfor %}
             </li>
             <li>

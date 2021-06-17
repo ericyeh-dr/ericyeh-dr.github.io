@@ -1,0 +1,12 @@
+{
+    "tags": [
+        {% for tag in site.tags %}
+        "{{ tag[0] }}"{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ],
+    "yearMonths": [
+        {% for post in site.posts %}
+        "{{ post.date | date: "%Y %b" }}"{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ]
+}
