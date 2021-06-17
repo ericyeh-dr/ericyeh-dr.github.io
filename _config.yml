@@ -35,6 +35,12 @@ plugins:
   - jekyll-feed
   - jekyll-archives
 
+# Archives
+collections:
+  archives:
+    output: true
+    permalink: /archives/:path/
+
 #settings for jekyll-archives
 jekyll-archives:
   enabled:
