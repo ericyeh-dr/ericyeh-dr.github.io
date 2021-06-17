@@ -12,11 +12,12 @@ layout: post
             </li>
             <li>
                 <span class="bi bi-tag"></span>
-                <a href="#">tag</a>
+                {% for tag in page.tags %}
+                    <a href="/tag/{{tag}}">{{tag}}</a>
+                {% endfor %}
             </li>
             <li>
-                <span class="bi bi-chat-left-text"></span>
-                <a href="#">14</a>
+                <span class="bi bi-clock"></span> {{page.date | date_to_long_string}}
             </li>
         </ul>
     </div>
