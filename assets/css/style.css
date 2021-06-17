@@ -1459,14 +1459,18 @@ a:hover {
   color: #fff;
 }
 
+.href-tag {
+    padding-right: 1rem;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 footer {
-  text-align: center;
-  color: #fff;
-  padding: 25px 0;
-  background: #0062d3;
+    text-align: center;
+    color: #fff;
+    padding: 25px 0;
+    background: #0062d3;
 }
 
 footer .copyright {

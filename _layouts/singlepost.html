@@ -8,12 +8,12 @@ layout: post
         <ul>
             <li>
                 <span class="bi bi-person"></span>
-                <a href="#">{{page.author}}</a>
+                <a href="/index.html">{{page.author}}</a>
             </li>
             <li>
                 <span class="bi bi-tag"></span>
                 {% for tag in page.tags %}
-                    <a href="/tag/{{tag}}">{{tag}}</a>
+                    <a class ="href-tag" href="/tag/{{tag | slugify}}">{{tag}}</a>
                 {% endfor %}
             </li>
             <li>

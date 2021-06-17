@@ -59,21 +59,28 @@ layout: default
                         <h5 class="sidebar-title">Archives</h5>
                         <div class="sidebar-content">
                             <ul class="list-sidebar">
-                                <li>
-                                    <a href="#">September, 2017.</a>
-                                </li>
-                                <li>
-                                    <a href="#">April, 2017.</a>
-                                </li>
-                                <li>
-                                    <a href="#">Nam quo autem exercitationem.</a>
-                                </li>
-                                <li>
-                                    <a href="#">Atque placeat maiores nam quo autem</a>
-                                </li>
-                                <li>
-                                    <a href="#">Nam quo autem exercitationem.</a>
-                                </li>
+                                {% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date | date: '%Y %m'"  %}
+                                {% for yearMonth in postsByYearMonth %}
+                                    {% assign names = yearMonth.name | split: " " %}
+                                    <li><a href="/{{ names[0] }}/{{ names[1] }}">
+                                            {{ names[0] }}
+                                            {% case {{names[1]}} %}
+                                                {% when '01' %}January
+                                                {% when '02' %}February
+                                                {% when '03' %}March
+                                                {% when '04' %}April
+                                                {% when '05' %}May
+                                                {% when '06' %}June
+                                                {% when '07' %}July
+                                                {% when '08' %}August
+                                                {% when '09' %}September
+                                                {% when '10' %}October
+                                                {% when '11' %}November
+                                                {% when '12' %}December
+                                            {% endcase %}
+                                        </a>
+                                    </li>
+                                {% endfor %}
                             </ul>
                         </div>
                     </div>
@@ -81,24 +88,11 @@ layout: default
                         <h5 class="sidebar-title">Tags</h5>
                         <div class="sidebar-content">
                             <ul>
-                                <li>
-                                    <a href="#">Web.</a>
-                                </li>
-                                <li>
-                                    <a href="#">Design.</a>
-                                </li>
-                                <li>
-                                    <a href="#">Travel.</a>
-                                </li>
-                                <li>
-                                    <a href="#">Photoshop</a>
-                                </li>
-                                <li>
-                                    <a href="#">Corel Draw</a>
-                                </li>
-                                <li>
-                                    <a href="#">JavaScript</a>
-                                </li>
+                                {% for tag in site.tags %}
+                                    <li>
+                                        <a href="/tag/{{ tag[0] | slugify}}">{{ tag[0] }}</a>
+                                    </li>
+                                {% endfor %}
                             </ul>
                         </div>
                     </div>
