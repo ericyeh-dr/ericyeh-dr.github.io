@@ -41,6 +41,9 @@ collections:
   tagnames:
     output: true
     permalink: /tag/:title/
+  years:
+    output: true
+    permalink: /year/:title/
 
 #settings for jekyll-archives
 #jekyll-archives:

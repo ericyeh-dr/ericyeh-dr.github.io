@@ -1,0 +1,21 @@
+---
+layout: post
+---
+
+<div class="title-blog text-left">
+    <h3 class="title-a">
+        Archive of posts in {{ page.year }}
+    </h3>
+</div>
+
+<ul>
+    {% for post in site.posts %}
+        {{ post.date | date: "%Y" }}
+        {% if tag_name == page.year %}
+        <li>
+            <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+        {% endif %}
+    {% endfor %}
+</ul>

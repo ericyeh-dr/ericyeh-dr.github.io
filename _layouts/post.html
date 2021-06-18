@@ -4,7 +4,7 @@ layout: default
 <header id="header-f" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-        <h1 class="logo"><a href="index.html">Eric Yeh</a></h1>
+        <h1 class="logo"><a href="/index.html">Eric Yeh</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -59,26 +59,9 @@ layout: default
                         <h5 class="sidebar-title">Archives</h5>
                         <div class="sidebar-content">
                             <ul class="list-sidebar">
-                                {% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date | date: '%Y %m'"  %}
-                                {% for yearMonth in postsByYearMonth %}
-                                    {% assign names = yearMonth.name | split: " " %}
-                                    <li><a href="/{{ names[0] }}/{{ names[1] }}">
-                                            {{ names[0] }}
-                                            {% case {{names[1]}} %}
-                                                {% when '01' %}January
-                                                {% when '02' %}February
-                                                {% when '03' %}March
-                                                {% when '04' %}April
-                                                {% when '05' %}May
-                                                {% when '06' %}June
-                                                {% when '07' %}July
-                                                {% when '08' %}August
-                                                {% when '09' %}September
-                                                {% when '10' %}October
-                                                {% when '11' %}November
-                                                {% when '12' %}December
-                                            {% endcase %}
-                                        </a>
+                                {% for year in site.years %}
+                                    <li>
+                                        <a href="{{year.url}}">{{ year.name }}</a>
                                     </li>
                                 {% endfor %}
                             </ul>
