@@ -88,9 +88,9 @@ layout: default
                         <h5 class="sidebar-title">Tags</h5>
                         <div class="sidebar-content">
                             <ul>
-                                {% for tag in site.tags %}
+                                {% for tagname in site.tagnames %}
                                     <li>
-                                        <a href="/tag/{{ tag[0] | slugify}}">{{ tag[0] }}</a>
+                                        <a href="{{tagname.url}}">{{ tagname.name }}</a>
                                     </li>
                                 {% endfor %}
                             </ul>
