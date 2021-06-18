@@ -13,4 +13,5 @@ permalink: /blog/:title
 ---
 
 Let's write a blog!!!
+Let's test visual studio code!!!
 
