@@ -34,6 +34,9 @@ a:hover {
   transition: all 0.5s ease-in-out;
 }
 
+td, th {
+  border: 1px solid grey;
+}
 
 .p-r {
   position: relative;
