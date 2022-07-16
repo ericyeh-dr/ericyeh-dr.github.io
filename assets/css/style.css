@@ -38,10 +38,13 @@ td, th {
   border: 1px solid grey;
 }
 
-code {
-  border: 1px solid grey;
-  border-radius: 2px;
+blockquote {
+  color: #666;
+  margin: 0;
+  padding-left: 3em;
+  border-left: 0.5em #eee solid;
 }
+
 
 .p-r {
   position: relative;
