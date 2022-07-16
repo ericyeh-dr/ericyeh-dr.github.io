@@ -34,6 +34,15 @@ a:hover {
   transition: all 0.5s ease-in-out;
 }
 
+td, th {
+  border: 1px solid grey;
+}
+
+code {
+  border: 1px solid grey;
+  border-radius: 2px;
+}
+
 .p-r {
   position: relative;
 }
