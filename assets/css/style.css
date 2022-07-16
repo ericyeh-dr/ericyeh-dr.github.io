@@ -34,17 +34,6 @@ a:hover {
   transition: all 0.5s ease-in-out;
 }
 
-td, th {
-  border: 1px solid grey;
-}
-
-blockquote {
-  color: #666;
-  margin: 0;
-  padding-left: 3em;
-  border-left: 0.5em #eee solid;
-}
-
 
 .p-r {
   position: relative;
