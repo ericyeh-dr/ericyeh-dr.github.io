@@ -2,12 +2,12 @@
 layout: singlepost
 title: "How to write with Markdown"
 author: "Eric Yeh"
-date: 2022-03-18
+date: 2022-04-07
 tags: 
   - blogging
   - coding
 permalink: /blog/:title
-excerpt: "test if the date will be updated"
+excerpt: "Markdown is a language that converts plain text to HTML"
 
 ---
 
