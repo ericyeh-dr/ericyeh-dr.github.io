@@ -1535,7 +1535,23 @@ footer .credits a {
 
 /*-----------------------------------------------------------------
 Python
+Adapted from 
+1.https://jwarby.github.io/jekyll-pygments-themes/languages/python.html
+2.https://github.com/chrisyeh96/chrisyeh96.github.io/blob/main/css/rouge-github.css
 -----------------------------------------------------------------*/
+
+.pre {
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: solid 1px #dce6f0;
+  border-radius: 0.3rem;
+  line-height: 1.45;
+}
+
+.highlight {
+  background-color: #f8f8f8;
+}
+
 .highlight .hll { background-color: #ffffcc }
 .highlight .c { color: #808080 } /* Comment */
 .highlight .err { color: #F00000; background-color: #F0A0A0 } /* Error */
