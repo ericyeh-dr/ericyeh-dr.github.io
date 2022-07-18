@@ -1,6 +1,6 @@
 ---
 layout: singlepost
-title: "How to write with Markdown"
+title: "Write a blog with Markdown and Jekyll"
 author: "Eric Yeh"
 date: 2022-04-07
 tags: 
@@ -8,48 +8,72 @@ tags:
   - coding
 permalink: /blog/:title
 excerpt: "Markdown is a language that converts plain text to HTML"
-
 ---
 
 * TOC
 {:toc}
 
 
-##### **Markdown features  testing**
+# Overview
 
 <p>The first paragraph</p>
 
 <p>The second paragraph</p>
 
-# Heading 1
+# Markdown
 
-A rule
+## link
 
-***
-
-A link
-
+The link can be tagged to a phrase by enclosing the pharase with square bracket \[words\] 
 This is the link: [My website](https://ericyeh-dr.github.io)
 
-Take a look at this link:
+Or the link can be directly shown with \<url\>. Take a look at this link: <http://www.markdownguide.org>
 
-<http://www.markdownguide.org>
+## divider
 
-## Heading 2
+A divider is 3 \* in a row: \*\*\*
 
-### Heading 3
+Output:
+***
 
-#### Heading 4
+## Unordered list
 
-##### Code examples
+Add \- in front of each item like:
+\- item 1
+\- item 2
+\- item 3
+
+Output:
+- list 1
+- list 2
+- list 3
+
+## blockquote
+
+(need to add CSS)
+> This is the second important quote.
+
+## Table
+
+This is a table
+\| Syntax      \| Description \|
+\| ----------- \| ----------- \|
+\| Header      \| Title       \|
+\| Paragraph   \| Text        \|
+
+
+Output:
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
+
+## inline code
 
 inline codes are written like this `print("Hello world!")`
 Highlight importance <mark>very important words</mark>
 
-<div class="p-3 mb-2 bg-secondary text-white code">
-  code example
-</div>
-
+## code block
 
 {% highlight python %}
 def bubble_sort(items):
@@ -61,57 +85,31 @@ def bubble_sort(items):
                 items[j], items[j+1] = items[j+1], items[j]
 {% endhighlight %}
 
+# Latex
 
-{% highlight json %}
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-{% endhighlight %}
-
-##### Latex examples
+## Math equation
 
 {% raw %}
   $$a^2 + b^2 = c^2$$
 {% endraw %}
 
+# CSS
 
-##### Callout
+## Callout
 
 <div class="callout callout-default">
   This is a default callout.
 </div>
 
-> This is an important quote.
 
 
-> This is the second important quote.
 
 
-- list 1
-- list 2
-- list 3
 
 
-##### **Real-world examples**
 
-This is a table
-
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
 
   
 
-##### **Summary**
 
-Table with different alignment
-
-| Syntax      | Description | Test Text     |
-| :---        |    :----:   |          ---: |
-| Header      | Title       | Here's this   |
-| Paragraph   | Text        | And <br><br> more      |
-| List        | Items       | <ul> <li> Item one. </li><li> Item two. </li> </ul> |
 
