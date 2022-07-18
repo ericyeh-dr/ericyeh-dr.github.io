@@ -24,9 +24,9 @@ excerpt: "Markdown is a language that converts plain text to HTML"
 
 ## link
 
-The link can be tagged to a phrase by enclosing the pharase with square bracket \[words\] 
-This is the link: [My website](https://ericyeh-dr.github.io)
-
+The link can be tagged to a phrase by enclosing the pharase with square bracket \[words\] <br>
+This is an example link: [My website](https://ericyeh-dr.github.io)<br>
+<br>
 Or the link can be directly shown with \<url\>. Take a look at this link: <http://www.markdownguide.org>
 
 ## divider
@@ -34,16 +34,18 @@ Or the link can be directly shown with \<url\>. Take a look at this link: <http:
 A divider is 3 \* in a row: \*\*\*
 
 Output:
+
 ***
 
 ## Unordered list
 
-Add \- in front of each item like:
-\- item 1
-\- item 2
-\- item 3
+Add \- in front of each item like:<br>
+\- item 1<br>
+\- item 2<br>
+\- item 3<br>
 
 Output:
+
 - list 1
 - list 2
 - list 3
@@ -51,18 +53,20 @@ Output:
 ## blockquote
 
 (need to add CSS)
+
 > This is the second important quote.
 
 ## Table
 
-This is a table
-\| Syntax      \| Description \|
-\| ----------- \| ----------- \|
-\| Header      \| Title       \|
-\| Paragraph   \| Text        \|
+This is a table<br>
+\| Syntax      \| Description \|<br>
+\| ----------- \| ----------- \|<br>
+\| Header      \| Title       \|<br>
+\| Paragraph   \| Text        \|<br>
 
 
 Output:
+
 | Syntax      | Description |
 | ----------- | ----------- |
 | Header      | Title       |
@@ -70,7 +74,7 @@ Output:
 
 ## inline code
 
-inline codes are written like this `print("Hello world!")`
+inline codes are written like this `print("Hello world!")`<br>
 Highlight importance <mark>very important words</mark>
 
 ## code block
