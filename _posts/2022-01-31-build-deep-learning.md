@@ -10,3 +10,17 @@ permalink: /blog/:title
 excerpt: "Building deep learning model using pytorch library"
 
 ---
+
+* TOC
+{:toc}
+
+# Overview
+
+- model
+- optimizer
+
+`nn.Module` 
+
+# Useful function
+
+# Structure of a deep learning model
