@@ -16,11 +16,20 @@ excerpt: "Markdown is a language that converts plain text to HTML"
 
 # Overview
 
-<p>The first paragraph</p>
+<p>This post is served as a note when I learned Markdown and Jekyll and as a reference for me in case I need to brush up my memories.</p>
 
-<p>The second paragraph</p>
+# What is Markdown
 
-# Markdown
+<p>Markdown is a language that allows you to format a document. 
+Markdown is extremely versatile and allows you to do pretty much anything you can think of during your writing process. 
+For example, making a big title, inserting an image, highlighting an important sentence. </p>
+
+# What is Jekyll
+
+<p>Jekyll is a tool to build static webpages using templates and markdown languages.
+It means that you just have to write the content with markdown and specify which templates your want to apply, Jekyll will build the html file for that page for you.</p>
+
+
 
 ## link
 

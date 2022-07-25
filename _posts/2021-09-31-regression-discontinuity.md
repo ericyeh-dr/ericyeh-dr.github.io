@@ -14,7 +14,7 @@ excerpt: "do causal inference without RCT"
 * TOC
 {:toc}
 
-# What is regression discontinuity?
+### **What is regression discontinuity?**
 
 <p>Regression discontiuity is an analytical method applied on observational data to infer causal effect of certain intervention.
 As its name suggests, the technique can be used when you have a discontinuity in the regression curve.
@@ -23,11 +23,11 @@ For example, antihypertensive drugs may be more commonly prescribed when blood p
 When we plot the treatment against the  running variable, we would see a sudden "jump" of treatment probability at the threshold (Figure 1).
 </p>
 
-![Figure 1](/assets/img/rdd.jpg){:class="img-responsive" width="250"}
+![Figure 1](/assets/img/rdd.jpg){:class="img-responsive" width="600"}
 
 
 
-# Why is its potential in medical researches?
+### **What is its potential in medical researches?**
 
 <p>Normally, we need randomized controlled trial to eliminate confounding and get unbiased causal effects. 
 However, not all important problems can be answered in randomized controlled trials. 
@@ -39,6 +39,6 @@ Patients walking into your clinic might have diseases that would make them ineli
 So we have no idea whether the conclusion drawn from the trial actually applies to the patients you see.
 </p>
 
-# How is the causal effect calculated?
+### **How is the causal effect calculated?**
 
-# Applications
+### **Applications**
