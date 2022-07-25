@@ -23,7 +23,7 @@ For example, antihypertensive drugs may be more commonly prescribed when blood p
 When we plot the treatment against the  running variable, we would see a sudden "jump" of treatment probability at the threshold (Figure 1).
 </p>
 
-![Figure 1](/assets/img/rdd.jpg){:class="img-responsive" width="600"}
+![Figure 1](/assets/img/rdd.jpg){:class="img-fluid" max-width="100%" height="auto"}
 
 
 
